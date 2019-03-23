@@ -1,20 +1,36 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/cli">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+<p-megaMenu [model]="mitems"></p-megaMenu>
 
+<p-breadcrumb [model]="items"></p-breadcrumb>
+<hr>
+<p-messages [(value)]="msgs" [showTransitionOptions]="'1610ms'" [hideTransitionOptions]="'310ms'"></p-messages>
+<br>
+<hr><button type="button" (click)="show()">Show</button><button type="button" (click)="warn()">Warning</button>
+<button type="button" (click)="hide()">Hide</button>
+
+<br>
+
+<br>
+<p-confirmDialog header="Confirmation" icon="pi pi-exclamation-triangle"></p-confirmDialog>
+
+<button type="text" (click)="confirm()" pButton icon="pi pi-check" label="Confirm"></button>
+
+<br>
+
+<hr>
+<h3 class="first">Drag Only</h3>
+<div pDraggable="pnl" dragHandle=".ui-panel-titlebar">
+  <p-panel header="Drag Header">
+    The story begins as Don Vito Corleone, the head of a New York Mafia family, oversees his daughter's wedding.
+    His beloved son Michael has just come home from the war, but does not intend to become part of his father's
+    business.
+    Through Michael's life the nature of the family business becomes clear. The business of the family is just like the
+    head of the family,
+    kind and benevolent to those who give respect, but given to ruthless violence whenever anything stands against the
+    good of the family.
+  </p-panel>
+</div>
+
+
+<br>
+
+<p-chart type="line" [data]="data"></p-chart>
