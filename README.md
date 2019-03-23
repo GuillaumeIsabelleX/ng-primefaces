@@ -1,4 +1,9 @@
-Why PrimeNG?
+# Doc
+https://guillaumeisabellex.github.io/ng-primefaces/
+
+
+# Why PrimeNG?
+
 https://www.primefaces.org/primeng/#/
 
 
