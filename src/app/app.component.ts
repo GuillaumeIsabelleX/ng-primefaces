@@ -14,7 +14,7 @@ import { Message, ConfirmationService, MenuItem } from 'primeng//api';
 export class AppComponent implements OnInit {
   mitems: MenuItem[];
   data: any;
-  private items: MenuItem[];
+  items: MenuItem[];
 
   ngOnInit() {
     this.items = [

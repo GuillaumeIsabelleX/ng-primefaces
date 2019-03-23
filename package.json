@@ -5,6 +5,10 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "build:docs": "ng build --prod --output-path docs --base-href /ng-primefaces/docs && cp docs/index.html docs/404.html ",
+    "build:subapp": "./build-sub-app",
+    "commit:docs": "git add docs/* ;  git commit docs -m \"docs updated\" && git push",
+    "release:docs": "npm run build:docs && npm run commit:docs",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
